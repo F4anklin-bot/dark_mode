@@ -38,11 +38,11 @@ function App() {
         </div>
 
         {isLightMode ? (
-          <button onClick={switchToDark} aria-label="Activer mode sombre">
+          <button className="cursor-pointer rounded-lg p-1 gb-gray-500 backdrop-blur-2xl" onClick={switchToDark} aria-label="Activer mode sombre">
             <MdDarkMode size={24} />
           </button>
         ) : (
-          <button onClick={switchToLight} aria-label="Activer mode clair">
+          <button className="cursor-pointer rounded-lg p-1 gb-gray-500 backdrop-blur-2xl" onClick={switchToLight} aria-label="Activer mode clair">
             <MdOutlineLightMode size={24} />
           </button>
         )}
